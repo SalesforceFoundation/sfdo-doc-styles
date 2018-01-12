@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@salesforce-ux/design-system": "^2.5.0",
-    "express": "^4.16.2",
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "webpack": "^3.10.0",
