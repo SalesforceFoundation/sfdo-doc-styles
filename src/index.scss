@@ -1,0 +1,296 @@
+@import
+  // SLDS Dependencies
+  '~@salesforce-ux/design-system/scss/design-tokens',
+  '~@salesforce-ux/design-system/scss/config',
+  '~@salesforce-ux/design-system/scss/vendor/deprecate',
+  '~@salesforce-ux/design-system/scss/dependencies/index';
+
+
+
+.example {
+  background: #fff;
+  &__container {
+    background: #fff;
+    padding: $spacing-large;
+  }
+}
+
+$sfdo-css-prefix: '.sfdo-kb';
+
+$text-size-bump-heading: .4rem;
+$text-size-bump-body: .1rem;
+
+$kb-theme-colors: (
+  product-documentation: #62B7ED
+);
+
+@mixin theme-header($theme) {
+  $color: map-get($kb-theme-colors, $theme);
+
+  #{$sfdo-css-prefix}-theme_#{$theme} {
+
+    #{$sfdo-css-prefix}__type {
+      color: $color;
+    }
+
+    #{$sfdo-css-prefix}__title {
+      color: $color;
+    }
+
+    #{$sfdo-css-prefix}__product-icon {
+      background-color: $color;
+    }
+
+  }
+}
+
+@mixin themes() {
+  @each $name, $color in $kb-theme-colors {
+    @include theme-header($name);
+  }
+}
+
+@mixin caption() {
+  font-size: $font-size-medium;
+  color: $color-text-weak;
+  font-style: italic;
+
+  margin: {
+    top: $spacing-xx-small;
+    bottom: $spacing-xx-small;
+  }
+}
+
+#{$sfdo-css-prefix} {
+
+  @import './notes';
+
+  &__header {
+    font-family: $font-family;
+  }
+
+  &__type {
+    margin-bottom: $spacing-xx-small;
+  }
+
+  &__title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: $spacing-medium;
+  }
+
+  &__summary {
+    color: $color-text-weak;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: $spacing-medium;
+
+    &:last-child {
+      margin-bottom: $spacing-medium;
+    }
+  }
+
+  @include themes();
+
+  &__footer {
+
+  }
+
+  &__body {
+    font-family: $font-family;
+    font-size: $font-size-medium + $text-size-bump-body;
+    padding-left: $square-icon-large-boundary + $spacing-small;
+
+
+    ul {
+      @include list-has-bullets;
+
+      margin-left: 1.5rem;
+
+      ul {
+        list-style: circle;
+
+        ul {
+          list-style: square;
+        }
+      }
+
+      li {
+        margin-bottom: $spacing-x-small;
+      }
+    }
+
+    ol {
+      @include list-has-numbers;
+
+      margin-left: 1.5rem;
+
+      ol {
+        list-style: lower-alpha;
+
+        ol {
+          list-style: lower-roman;
+        }
+      }
+
+      li {
+        margin-bottom: $spacing-x-small;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    ol,
+    dl,
+    img,
+    figure,
+    table {
+      margin-bottom: $spacing-medium;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: $font-family;
+      line-height: 1.25;
+      padding-top: $spacing-small;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    h2 + h3 {
+      padding-top: 0;
+    }
+
+    h3 + h4 {
+      padding-top: 0;
+    }
+
+    h1 {
+      font-size: $font-size-xx-large + $text-size-bump-heading;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-weight: 300;
+      font-size: $font-size-x-large + $text-size-bump-heading;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: $font-size-x-large;
+    }
+
+    h4 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: $font-size-large;
+    }
+
+    h5 {
+      font-weight: 500;
+      font-size: $font-size-medium;
+    }
+
+    h6 {
+      font-weight: 500;
+      font-size: $font-size-small;
+    }
+
+    code {
+      background: $color-background;
+      font-size: $font-size-medium;
+      padding: {
+        right: $spacing-xx-small;
+        left: $spacing-xx-small;
+      }
+    }
+
+    figure {
+      display: block;
+
+      img {
+        margin-bottom: 0;
+      }
+      figcaption {
+        @include caption();
+
+        > p:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    table {
+
+      caption {
+        @include caption();
+      }
+
+      thead,
+      tbody {
+        font-size: $font-size-medium;
+      }
+
+      background-color: $color-background-alt;
+      font-size: inherit; // forces table to respect body font
+
+      // Cells
+      th,
+      td {
+        padding: $table-cell-spacing;
+        position: relative;
+      }
+
+      td {
+        vertical-align: top;
+      }
+
+      // Table Heading Cells
+      th {
+        font-weight: $font-weight-regular;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      thead th {
+        background-color: $table-color-background-header;
+        color: $table-color-text-header;
+        padding: $table-cell-spacing;
+      }
+
+      // First cells in a row
+      tr > th:first-child,
+      tr > td:first-child {
+        padding-left: $spacing-large;
+      }
+
+      // Last cells in a row
+      tr > th:last-child,
+      tr > td:last-child {
+        padding-right: $spacing-large;
+      }
+
+      border-collapse: separate;
+      border: $border-width-thin solid $color-border;
+
+      thead > tr + tr > th {
+        border-top: $border-width-thin solid $color-border;
+      }
+
+      // Cells
+      tbody td,
+      tbody th {
+        border-top: $border-width-thin solid $color-border;
+      }
+    }
+  }
+}

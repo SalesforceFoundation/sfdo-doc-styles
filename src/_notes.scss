@@ -1,0 +1,18 @@
+#{$sfdo-css-prefix} {
+
+  &-note {
+    @include box($theme: null, $padding: $spacing-medium, $borders: around);
+
+    margin-bottom: $spacing-medium;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    &__heading {
+      line-height: $square-icon-small-boundary;
+      font-weight: 800;
+      margin-bottom: $spacing-x-small;
+    }
+  }
+}
