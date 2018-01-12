@@ -10,7 +10,8 @@
     "node": ">=6.7.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
   },
   "dependencies": {
     "@salesforce-ux/design-system": "^2.5.0",
