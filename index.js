@@ -10,4 +10,5 @@ app.get('/', (request, response) => {
   response.sendFile(__dirname + '/build/index.html');
 });
 
+console.log('Served: http://localhost:' + port);
 app.listen(port);
