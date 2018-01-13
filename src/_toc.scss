@@ -1,0 +1,13 @@
+#{$sfdo-css-prefix} {
+
+  &-inline-toc {
+    display: inline-block;
+
+    margin-bottom: $spacing-medium;
+
+
+    &__list {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+.example {
+  background: #fff; }
+  .example__container {
+    background: #fff;
+    padding: 1.5rem; }
+
+.sfdo-kb .sfdo-kb-note {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #dddbda;
+  margin-bottom: 1rem; }
+  .sfdo-kb .sfdo-kb-note p:last-child {
+    margin-bottom: 0; }
+  .sfdo-kb .sfdo-kb-note__heading {
+    line-height: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem; }
+
+.sfdo-kb .sfdo-kb-inline-toc {
+  display: inline-block;
+  margin-bottom: 1rem; }
+  .sfdo-kb .sfdo-kb-inline-toc__list {
+    margin-bottom: 0; }
+
+.sfdo-kb__header {
+  font-family: "Salesforce Sans", Arial, sans-serif; }
+
+.sfdo-kb__type {
+  margin-bottom: 0.25rem; }
+
+.sfdo-kb__title {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem; }
+
+.sfdo-kb__summary {
+  color: #706e6b;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dddbda; }
+  .sfdo-kb__summary:last-child {
+    margin-bottom: 1rem; }
+
+.sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__type {
+  color: #62B7ED; }
+
+.sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__title {
+  color: #62B7ED; }
+
+.sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__product-icon {
+  background-color: #62B7ED; }
+
+.sfdo-kb__body {
+  font-family: "Salesforce Sans", Arial, sans-serif;
+  font-size: 0.9125rem;
+  padding-left: 3.75rem; }
+  .sfdo-kb__body ul {
+    margin-left: 1.5rem;
+    list-style: disc;
+    margin-left: 1.5rem; }
+    .sfdo-kb__body ul ul {
+      list-style: circle; }
+      .sfdo-kb__body ul ul ul {
+        list-style: square; }
+  .sfdo-kb__body ol {
+    margin-left: 1.5rem;
+    list-style: decimal;
+    margin-left: 1.5rem; }
+    .sfdo-kb__body ol ol {
+      list-style: lower-alpha; }
+      .sfdo-kb__body ol ol ol {
+        list-style: lower-roman; }
+  .sfdo-kb__body li {
+    margin-bottom: 0.25rem; }
+    .sfdo-kb__body li p {
+      margin-bottom: 0.25rem; }
+  .sfdo-kb__body h1,
+  .sfdo-kb__body h2,
+  .sfdo-kb__body h3,
+  .sfdo-kb__body h4,
+  .sfdo-kb__body h5,
+  .sfdo-kb__body h6,
+  .sfdo-kb__body p,
+  .sfdo-kb__body ul,
+  .sfdo-kb__body ol,
+  .sfdo-kb__body dl,
+  .sfdo-kb__body img,
+  .sfdo-kb__body figure,
+  .sfdo-kb__body table {
+    margin-bottom: 1rem; }
+  .sfdo-kb__body h1, .sfdo-kb__body h2, .sfdo-kb__body h3, .sfdo-kb__body h4, .sfdo-kb__body h5, .sfdo-kb__body h6 {
+    font-family: "Salesforce Sans", Arial, sans-serif;
+    line-height: 1.25;
+    padding-top: 0.75rem; }
+    .sfdo-kb__body h1:first-child, .sfdo-kb__body h2:first-child, .sfdo-kb__body h3:first-child, .sfdo-kb__body h4:first-child, .sfdo-kb__body h5:first-child, .sfdo-kb__body h6:first-child {
+      padding-top: 0; }
+  .sfdo-kb__body h2 + h3 {
+    padding-top: 0; }
+  .sfdo-kb__body h3 + h4 {
+    padding-top: 0; }
+  .sfdo-kb__body h1 {
+    font-size: 2.15rem;
+    font-weight: 300; }
+  .sfdo-kb__body h2 {
+    font-weight: 300;
+    font-size: 1.65rem; }
+  .sfdo-kb__body h3 {
+    font-weight: 500;
+    font-size: 1.25rem; }
+  .sfdo-kb__body h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem; }
+  .sfdo-kb__body h5 {
+    font-weight: 500;
+    font-size: 0.8125rem; }
+  .sfdo-kb__body h6 {
+    font-weight: 500;
+    font-size: 0.75rem; }
+  .sfdo-kb__body code {
+    background: #f3f2f2;
+    font-size: 0.8125rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem; }
+  .sfdo-kb__body figure {
+    display: block; }
+    .sfdo-kb__body figure img {
+      margin-bottom: 0; }
+    .sfdo-kb__body figure figcaption {
+      font-size: 0.8125rem;
+      color: #706e6b;
+      font-style: italic;
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem; }
+      .sfdo-kb__body figure figcaption > p:last-child {
+        margin-bottom: 0; }
+  .sfdo-kb__body table {
+    background-color: white;
+    font-size: inherit;
+    border-collapse: separate;
+    border: 1px solid #dddbda; }
+    .sfdo-kb__body table caption {
+      font-size: 0.8125rem;
+      color: #706e6b;
+      font-style: italic;
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem; }
+    .sfdo-kb__body table thead,
+    .sfdo-kb__body table tbody {
+      font-size: 0.8125rem; }
+    .sfdo-kb__body table th,
+    .sfdo-kb__body table td {
+      padding: 0.25rem 0.5rem;
+      position: relative; }
+    .sfdo-kb__body table td {
+      vertical-align: top; }
+    .sfdo-kb__body table th {
+      font-weight: 400; }
+      .sfdo-kb__body table th:focus {
+        outline: 0; }
+    .sfdo-kb__body table thead th {
+      background-color: #fafaf9;
+      color: #514f4d;
+      padding: 0.25rem 0.5rem; }
+    .sfdo-kb__body table tr > th:first-child,
+    .sfdo-kb__body table tr > td:first-child {
+      padding-left: 1.5rem; }
+    .sfdo-kb__body table tr > th:last-child,
+    .sfdo-kb__body table tr > td:last-child {
+      padding-right: 1.5rem; }
+    .sfdo-kb__body table thead > tr + tr > th {
+      border-top: 1px solid #dddbda; }
+    .sfdo-kb__body table tbody td,
+    .sfdo-kb__body table tbody th {
+      border-top: 1px solid #dddbda; }

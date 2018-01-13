@@ -63,7 +63,9 @@ $kb-theme-colors: (
 
 #{$sfdo-css-prefix} {
 
-  @import './notes';
+  @import
+    './notes',
+    './toc';
 
   &__header {
     font-family: $font-family;
@@ -84,6 +86,8 @@ $kb-theme-colors: (
     font-size: 1.3rem;
     font-weight: 300;
     margin-bottom: $spacing-medium;
+    padding-bottom: $spacing-medium;
+    border-bottom: 1px solid $color-border;
 
     &:last-child {
       margin-bottom: $spacing-medium;
@@ -114,10 +118,6 @@ $kb-theme-colors: (
           list-style: square;
         }
       }
-
-      li {
-        margin-bottom: $spacing-x-small;
-      }
     }
 
     ol {
@@ -132,9 +132,13 @@ $kb-theme-colors: (
           list-style: lower-roman;
         }
       }
+    }
 
-      li {
-        margin-bottom: $spacing-x-small;
+    li {
+      margin-bottom: $spacing-xx-small;
+
+      p {
+        margin-bottom: $spacing-xx-small;
       }
     }
 

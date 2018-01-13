@@ -30,5 +30,5 @@ function renderToc(names) {
     return renderTocItem(pair);
   });
 
-  return `<ul>${items.join('')}</ul>`;
+  return `${items.join('')}`;
 }
