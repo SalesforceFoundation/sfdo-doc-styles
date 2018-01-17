@@ -8,10 +8,23 @@ module.exports = {
     path: path.resolve(__dirname, 'build')
   },
   devServer: {
-    contentBase: ['./build', path.join(__dirname, "node_modules/@salesforce-ux/design-system/assets")]
+    contentBase: [
+      './build',
+      path.join(__dirname, "node_modules/@salesforce-ux/design-system/assets"),
+      path.join(__dirname, "./build/assets")]
   },
   module: {
     rules: [{
+      test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+      use: [{
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[name].[ext]',
+          publicPath: '',
+          emitFile: false
+        }
+      }]
+    }, {
       test: /\.scss$/,
       use: ExtractTextPlugin.extract({
         use: [{
@@ -25,7 +38,7 @@ module.exports = {
     }]
   },
   plugins: [
-    new ExtractTextPlugin('styles.css', {
+    new ExtractTextPlugin('assets/styles.css', {
       allChunks: true
     })
   ]

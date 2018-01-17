@@ -1,8 +1,58 @@
+
+
+$kb-icons: (
+  info: ("\e900", $color-text-icon-default),
+  tip: ("\e901", $color-text-icon-default),
+  note: ("\e902", $color-text-icon-default),
+  video: ("\e903", $color-text-icon-default),
+  warning: ("\e904", $color-text-warning),
+);
+
+$kb-note-icon-size: $square-icon-small-boundary;
+
+@mixin icon($pair) {
+  &:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sfdo-kb-docs-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    position: absolute;
+    left: $spacing-medium;
+    top: $spacing-medium;
+
+    content: nth($pair, 1);
+    color: nth($pair, 2);
+
+    font-size: $kb-note-icon-size;
+  }
+}
+
+@mixin icons() {
+  @each $name, $pair in $kb-icons {
+
+    &_#{$name} {
+      @include icon($pair);
+    }
+  }
+}
+
+
 #{$sfdo-css-prefix} {
 
   &-note {
-    @include box($theme: null, $padding: $spacing-medium, $borders: around);
+    @include box($theme: shade, $padding: $spacing-medium, $borders: around);
 
+    position: relative;
+    padding-left: $kb-note-icon-size + $spacing-medium + $spacing-small;
     margin-bottom: $spacing-medium;
 
     p:last-child {
@@ -14,5 +64,7 @@
       font-weight: 800;
       margin-bottom: $spacing-x-small;
     }
+
+    @include icons();
   }
 }
