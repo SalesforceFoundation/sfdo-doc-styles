@@ -6,6 +6,7 @@ $kb-icons: (
   note: ("\e902", $color-text-icon-default),
   video: ("\e903", $color-text-icon-default),
   warning: ("\e904", $color-text-warning),
+  important: ("\e904", $color-text-warning)
 );
 
 $kb-note-icon-size: $square-icon-small-boundary;

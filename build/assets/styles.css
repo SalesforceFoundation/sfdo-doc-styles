@@ -17,6 +17,8 @@
   border-radius: 0.25rem;
   background-color: #f3f2f2;
   border: 1px solid #dddbda;
+  position: relative;
+  padding-left: 3.25rem;
   margin-bottom: 1rem; }
   .sfdo-kb .sfdo-kb-note p:last-child {
     margin-bottom: 0; }
@@ -36,8 +38,12 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
     content: "\E900";
-    color: #3e3e3c; }
+    color: #706e6b;
+    font-size: 1.5rem; }
   .sfdo-kb .sfdo-kb-note_tip:before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'sfdo-kb-docs-icons' !important;
@@ -50,8 +56,12 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
     content: "\E901";
-    color: #3e3e3c; }
+    color: #706e6b;
+    font-size: 1.5rem; }
   .sfdo-kb .sfdo-kb-note_note:before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'sfdo-kb-docs-icons' !important;
@@ -64,8 +74,12 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
     content: "\E902";
-    color: #3e3e3c; }
+    color: #706e6b;
+    font-size: 1.5rem; }
   .sfdo-kb .sfdo-kb-note_video:before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'sfdo-kb-docs-icons' !important;
@@ -78,8 +92,12 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
     content: "\E903";
-    color: #3e3e3c; }
+    color: #706e6b;
+    font-size: 1.5rem; }
   .sfdo-kb .sfdo-kb-note_warning:before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'sfdo-kb-docs-icons' !important;
@@ -92,8 +110,30 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
     content: "\E904";
-    color: #ffb75d; }
+    color: #ffb75d;
+    font-size: 1.5rem; }
+  .sfdo-kb .sfdo-kb-note_important:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sfdo-kb-docs-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    content: "\E904";
+    color: #ffb75d;
+    font-size: 1.5rem; }
 
 .sfdo-kb .sfdo-kb-inline-toc {
   display: inline-block;
