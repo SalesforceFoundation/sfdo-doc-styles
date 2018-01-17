@@ -19,6 +19,16 @@ $kb-note-icon-size: $square-icon-small-boundary;
 
 @mixin icon($pair) {
   &:before {
+    content: nth($pair, 1);
+    color: nth($pair, 2);
+
+    font-size: $kb-note-icon-size;
+  }
+}
+
+@mixin icons() {
+
+  &:before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'sfdo-kb-docs-icons' !important;
     speak: none;
@@ -35,15 +45,8 @@ $kb-note-icon-size: $square-icon-small-boundary;
     position: absolute;
     left: $spacing-medium;
     top: $spacing-medium;
-
-    content: nth($pair, 1);
-    color: nth($pair, 2);
-
-    font-size: $kb-note-icon-size;
   }
-}
 
-@mixin icons() {
   @each $name, $pair in $kb-icons {
 
     &_#{$name} {
