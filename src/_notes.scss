@@ -2,10 +2,16 @@
 
 $kb-icons: (
   info: ("\e900", $color-text-icon-default),
+
+  // same as 'info'
+  attention: ("\e900", $color-text-icon-default),
+
   tip: ("\e901", $color-text-icon-default),
   note: ("\e902", $color-text-icon-default),
   video: ("\e903", $color-text-icon-default),
   warning: ("\e904", $color-text-warning),
+
+  // same as 'warning'
   important: ("\e904", $color-text-warning)
 );
 

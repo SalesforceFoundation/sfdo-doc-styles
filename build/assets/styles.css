@@ -44,6 +44,24 @@
     content: "\E900";
     color: #706e6b;
     font-size: 1.5rem; }
+  .sfdo-kb .sfdo-kb-note_attention:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sfdo-kb-docs-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    content: "\E900";
+    color: #706e6b;
+    font-size: 1.5rem; }
   .sfdo-kb .sfdo-kb-note_tip:before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'sfdo-kb-docs-icons' !important;
