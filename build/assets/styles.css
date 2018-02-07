@@ -77,7 +77,15 @@
     margin-bottom: 0; }
 
 .slds .sfdo-kb__header {
-  font-family: "Salesforce Sans", Arial, sans-serif; }
+  font-family: "Salesforce Sans", Arial, sans-serif;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #dddbda; }
+
+.slds .sfdo-kb__footer {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #dddbda; }
 
 .slds .sfdo-kb__type {
   margin-bottom: 0.25rem; }
@@ -90,12 +98,9 @@
 .slds .sfdo-kb__summary {
   color: #706e6b;
   font-size: 1.3rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #dddbda; }
+  font-weight: 300; }
   .slds .sfdo-kb__summary:last-child {
-    margin-bottom: 1rem; }
+    margin-bottom: 0; }
 
 .slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__type {
   color: #62B7ED; }

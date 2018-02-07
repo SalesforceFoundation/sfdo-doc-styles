@@ -81,6 +81,15 @@ $kb-theme-colors: (
 
     &__header {
       font-family: $font-family;
+      margin-bottom: $spacing-large;
+      padding-bottom: $spacing-large;
+      border-bottom: 1px solid $color-border;
+    }
+
+    &__footer {
+      margin-top: $spacing-large;
+      padding-top: $spacing-large;
+      border-top: 1px solid $color-border;
     }
 
     &__type {
@@ -97,12 +106,9 @@ $kb-theme-colors: (
       color: $color-text-weak;
       font-size: 1.3rem;
       font-weight: 300;
-      margin-bottom: $spacing-medium;
-      padding-bottom: $spacing-medium;
-      border-bottom: 1px solid $color-border;
 
       &:last-child {
-        margin-bottom: $spacing-medium;
+        margin-bottom: 0;
       }
     }
 
