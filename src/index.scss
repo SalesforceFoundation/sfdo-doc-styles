@@ -73,6 +73,12 @@ $kb-theme-colors: (
 }
 .slds {
 
+  &.sfdo-kb {
+    dt {
+      font-weight: 500;
+    }
+  }
+
   #{$sfdo-css-prefix} {
 
     @import

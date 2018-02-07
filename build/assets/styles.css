@@ -12,6 +12,9 @@
     background: #fff;
     padding: 1.5rem; }
 
+.slds.sfdo-kb dt {
+  font-weight: 500; }
+
 .slds .sfdo-kb .sfdo-kb-note {
   padding: 1rem;
   border-radius: 0.25rem;
