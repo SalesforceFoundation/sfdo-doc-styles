@@ -68,6 +68,10 @@
     content: "\E904";
     color: #ffb75d;
     font-size: 1.5rem; }
+  .slds .sfdo-kb .sfdo-kb-note_thank_you:before {
+    content: "\E905";
+    color: #e9696e;
+    font-size: 1.5rem; }
   .slds .sfdo-kb .sfdo-kb-note_important:before {
     content: "\E904";
     color: #ffb75d;
