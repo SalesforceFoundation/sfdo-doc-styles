@@ -141,7 +141,9 @@
   .slds .sfdo-kb__body li {
     margin-bottom: 0.25rem; }
     .slds .sfdo-kb__body li p {
-      margin-bottom: 0.25rem; }
+      margin-bottom: 0.5rem; }
+    .slds .sfdo-kb__body li img {
+      margin-bottom: 0.5rem; }
   .slds .sfdo-kb__body dl {
     margin-bottom: 1rem; }
   .slds .sfdo-kb__body dt {

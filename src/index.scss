@@ -162,7 +162,11 @@ $kb-theme-colors: (
         margin-bottom: $spacing-xx-small;
 
         p {
-          margin-bottom: $spacing-xx-small;
+          margin-bottom: $spacing-x-small;
+        }
+
+        img {
+          margin-bottom: $spacing-x-small;
         }
       }
 
