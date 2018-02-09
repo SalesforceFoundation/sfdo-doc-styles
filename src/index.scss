@@ -172,11 +172,12 @@ $kb-theme-colors: (
 
       dt {
         font-weight: $font-weight-bold;
+        margin-bottom: $spacing-xx-small;
       }
 
       dd {
-        margin-left: $spacing-large;
-        margin-bottom: $spacing-x-small;
+        margin-left: $spacing-medium;
+        margin-bottom: $spacing-medium;
 
         &:last-child {
           margin-bottom: 0;

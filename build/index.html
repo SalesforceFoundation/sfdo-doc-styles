@@ -124,6 +124,60 @@
 
           <p>Bacon ipsum dolor amet beef pork belly alcatra pastrami ham meatloaf. Frankfurter pork belly pork loin pastrami rump porchetta tenderloin tri-tip. Turducken bresaola pork chop kielbasa. Picanha ham hock buffalo, biltong capicola tail rump ham sirloin pork chop pig shoulder prosciutto swine. Ham hock rump shank, buffalo pancetta pork belly flank beef ground round.</p>
 
+          <dl>
+
+            <dt>Sharing Rules</dt>
+
+            <dd>In Professional, Enterprise, Unlimited, Performance, or Developer edition orgs, any
+              sharing rules are applied to the merged account. Also, any manual sharing from the
+              master record is applied to the merged account.</dd>
+
+            <dt>Redundant Relationships</dt>
+
+            <dd>If you try to merge accounts that are indirectly related to the same contact,
+              Salesforce displays a message suggesting that you remove the redundant relationships. On
+              account records, indirect relationships are managed from the Related Contacts related
+              list.</dd>
+
+            <dt>Related Items, Chatter Feeds, and Attachments</dt>
+
+            <dd>When duplicate records are related to items such as campaigns or activities,
+              Salesforce relates the items to the merged record, with some exceptions. Chatter
+                feeds are retained from the master record only. Attachments in Chatter feeds are
+                retained in Salesforce but aren’t associated with the merged record. To associate
+              the dropped files with the merged record, find them in Files home (in Lightning
+              Experience) or the Files tab (in Salesforce Classic). Then add them to the Files related
+              list on the merged record.</dd>
+
+            <dt>Hidden and Read-Only Fields</dt>
+
+            <dd>Salesforce retains any data in hidden or read-only fields, such as sharing settings,
+              from the master record. Hidden fields aren’t shown while you merge. A merged record
+              retains the Created By user and Created Date from the oldest record merged, regardless
+              of which record is the master. The record shows the merge date as the Last Modified By
+              date.</dd>
+
+            <dt>Account Hierarchy</dt>
+
+            <dd>In Lightning Experience, you can choose the parent account to retain. In Salesforce
+              Classic, the merged account retains the account hierarchy from the master record.</dd>
+
+            <dt>Non-Master Accounts</dt>
+
+            <dd>The non-master accounts are moved to the Recycle Bin.</dd>
+
+            <dt>Divisions</dt>
+
+            <dd>If divisions are enabled, the merged account is assigned to the division from the
+              master record unless you select otherwise.</dd>
+
+            <dt>Relationship Groups</dt>
+
+            <dd>Lightning Experience doesn’t support merging of accounts associated with relationship
+              groups.</dd>
+
+          </dl>
+
           <h2>Images</h2>
 
           <h3>Basic</h3>

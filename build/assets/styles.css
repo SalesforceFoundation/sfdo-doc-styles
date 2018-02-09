@@ -145,10 +145,11 @@
   .slds .sfdo-kb__body dl {
     margin-bottom: 1rem; }
   .slds .sfdo-kb__body dt {
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 0.25rem; }
   .slds .sfdo-kb__body dd {
-    margin-left: 1.5rem;
-    margin-bottom: 0.5rem; }
+    margin-left: 1rem;
+    margin-bottom: 1rem; }
     .slds .sfdo-kb__body dd:last-child {
       margin-bottom: 0; }
   .slds .sfdo-kb__body h1,
