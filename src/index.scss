@@ -166,6 +166,23 @@ $kb-theme-colors: (
         }
       }
 
+      dl {
+        margin-bottom: $spacing-medium;
+      }
+
+      dt {
+        font-weight: $font-weight-bold;
+      }
+
+      dd {
+        margin-left: $spacing-large;
+        margin-bottom: $spacing-x-small;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
       h1,
       h2,
       h3,
