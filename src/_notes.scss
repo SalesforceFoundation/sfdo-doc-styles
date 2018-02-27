@@ -17,6 +17,7 @@ $kb-icons: (
 );
 
 $kb-note-icon-size: $square-icon-small-boundary;
+$kb-link-icon-size: $square-icon-x-small-boundary;
 
 @mixin icon($pair) {
   &:before {
@@ -42,10 +43,6 @@ $kb-note-icon-size: $square-icon-small-boundary;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    position: absolute;
-    left: $spacing-medium;
-    top: $spacing-medium;
   }
 
   @each $name, $pair in $kb-icons {
@@ -76,6 +73,25 @@ $kb-note-icon-size: $square-icon-small-boundary;
       margin-bottom: $spacing-x-small;
     }
 
+    &:before {
+      position: absolute;
+      left: $spacing-medium;
+      top: $spacing-medium;
+    }
+
     @include icons();
+  }
+
+  &-icon-link {
+    &__icon {
+
+      @include icons();
+
+      &:before {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.5rem;
+      }
+    }
   }
 }

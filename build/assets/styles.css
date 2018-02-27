@@ -30,6 +30,10 @@
     font-weight: 800;
     margin-bottom: 0.5rem; }
   .slds .sfdo-kb .sfdo-kb-note:before {
+    position: absolute;
+    left: 1rem;
+    top: 1rem; }
+  .slds .sfdo-kb .sfdo-kb-note:before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'sfdo-kb-docs-icons' !important;
     speak: none;
@@ -40,10 +44,7 @@
     line-height: 1;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: absolute;
-    left: 1rem;
-    top: 1rem; }
+    -moz-osx-font-smoothing: grayscale; }
   .slds .sfdo-kb .sfdo-kb-note_info:before {
     content: "\E900";
     color: #706e6b;
@@ -76,6 +77,64 @@
     content: "\E904";
     color: #ffb75d;
     font-size: 1.5rem; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sfdo-kb-docs-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon_info:before {
+  content: "\E900";
+  color: #706e6b;
+  font-size: 1.5rem; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon_attention:before {
+  content: "\E900";
+  color: #706e6b;
+  font-size: 1.5rem; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon_tip:before {
+  content: "\E901";
+  color: #706e6b;
+  font-size: 1.5rem; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon_note:before {
+  content: "\E902";
+  color: #706e6b;
+  font-size: 1.5rem; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon_video:before {
+  content: "\E903";
+  color: #706e6b;
+  font-size: 1.5rem; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon_warning:before {
+  content: "\E904";
+  color: #ffb75d;
+  font-size: 1.5rem; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon_thank_you:before {
+  content: "\E905";
+  color: #e9696e;
+  font-size: 1.5rem; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon_important:before {
+  content: "\E904";
+  color: #ffb75d;
+  font-size: 1.5rem; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon:before {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5rem; }
 
 .slds .sfdo-kb .sfdo-kb-inline-toc {
   display: inline-block;
