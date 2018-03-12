@@ -261,6 +261,8 @@
     font-size: 0.8125rem;
     padding-right: 0.25rem;
     padding-left: 0.25rem; }
+  .slds .sfdo-kb__body var {
+    font-style: italic; }
   .slds .sfdo-kb__body figure {
     display: block; }
     .slds .sfdo-kb__body figure img {
