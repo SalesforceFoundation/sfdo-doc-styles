@@ -161,7 +161,7 @@ $kb-theme-colors: (
       li {
         margin-bottom: $spacing-xx-small;
 
-        p {
+        p, .p {
           margin-bottom: $spacing-x-small;
         }
 
@@ -250,6 +250,11 @@ $kb-theme-colors: (
         font-size: $font-size-small;
       }
 
+      var,
+      em {
+        font-style: italic;
+      }
+
       code {
         background: $color-background;
         font-size: $font-size-medium;
@@ -257,10 +262,6 @@ $kb-theme-colors: (
           right: $spacing-xx-small;
           left: $spacing-xx-small;
         }
-      }
-
-      var {
-        font-style: italic;
       }
 
       figure {
