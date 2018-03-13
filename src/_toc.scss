@@ -5,6 +5,9 @@
 
     margin-bottom: $spacing-medium;
 
+    &__heading {
+      padding-top: 0;
+    }
 
     &__list {
       margin-bottom: 0;

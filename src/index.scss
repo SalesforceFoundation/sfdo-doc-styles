@@ -208,10 +208,6 @@ $kb-theme-colors: (
         font-family: $font-family;
         line-height: 1.25;
         padding-top: $spacing-small;
-
-        &:first-child {
-          padding-top: 0;
-        }
       }
 
       h2 + h3 {

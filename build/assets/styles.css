@@ -28,7 +28,8 @@
   .slds .sfdo-kb .sfdo-kb-note__heading {
     line-height: 1.5rem;
     font-weight: 800;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    padding-top: 0; }
   .slds .sfdo-kb .sfdo-kb-note:before {
     position: absolute;
     left: 1rem;
@@ -139,6 +140,8 @@
 .slds .sfdo-kb .sfdo-kb-inline-toc {
   display: inline-block;
   margin-bottom: 1rem; }
+  .slds .sfdo-kb .sfdo-kb-inline-toc__heading {
+    padding-top: 0; }
   .slds .sfdo-kb .sfdo-kb-inline-toc__list {
     margin-bottom: 0; }
 
@@ -231,8 +234,6 @@
     font-family: "Salesforce Sans", Arial, sans-serif;
     line-height: 1.25;
     padding-top: 0.75rem; }
-    .slds .sfdo-kb__body h1:first-child, .slds .sfdo-kb__body h2:first-child, .slds .sfdo-kb__body h3:first-child, .slds .sfdo-kb__body h4:first-child, .slds .sfdo-kb__body h5:first-child, .slds .sfdo-kb__body h6:first-child {
-      padding-top: 0; }
   .slds .sfdo-kb__body h2 + h3 {
     padding-top: 0; }
   .slds .sfdo-kb__body h3 + h4 {
