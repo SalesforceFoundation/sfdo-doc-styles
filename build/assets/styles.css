@@ -264,8 +264,8 @@
   .slds .sfdo-kb__body code {
     background: #f3f2f2;
     font-size: 0.8125rem;
-    padding-right: 0.25rem;
-    padding-left: 0.25rem; }
+    padding-right: 2px;
+    padding-left: 2px; }
   .slds .sfdo-kb__body figure {
     display: block; }
     .slds .sfdo-kb__body figure img {
