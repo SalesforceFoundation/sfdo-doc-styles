@@ -182,7 +182,9 @@
 
           <h3>Basic</h3>
 
-          <img src="/images/carousel/carousel-01.jpg" />
+          <div class="sfdo-kb-img">
+            <img src="/images/carousel/carousel-01.jpg" />
+          </div>
 
           <h3>Figures with Captions</h3>
 
@@ -204,19 +206,35 @@
 
           <ol>
             <li>
-              <p>Bacon ipsum dolor amet beef pork belly alcatra pastrami ham meatloaf.</p>
-              <img src="/images/carousel/carousel-01.jpg" />
+              <div class="sfdo-kb-img">
+                <img src="/images/carousel/carousel-01.jpg" />
+              </div>
+            </li>
+            <li>
+              <div class="sfdo-kb-img">
+                <img src="/images/carousel/carousel-01.jpg" />
+              </div>
+            </li>
+            <li>
+              <p>Bacon ipsum dolor <span class="sfdo-kb-img_inline"><img width="20" height="20" src="/images/carousel/carousel-01.jpg" /></span> amet beef pork belly alcatra pastrami ham meatloaf.</p>
+              <div class="sfdo-kb-img">
+                <img src="/images/carousel/carousel-01.jpg" />
+              </div>
               <p>Frankfurter pork belly pork loin pastrami.</p>
             </li>
             <li>
-              <p>Two</p>
-              <img src="/images/carousel/carousel-02.jpg" />
-              <p>Frankfurter pork belly pork loin pastrami.</p>
+              <span>This text has no wrapper</spam>
+              <div class="sfdo-kb-img">
+                <img src="/images/carousel/carousel-02.jpg" />
+              </div>
+              <p>This text is in a paragraph element.</p>
             </li>
             <li>
-              <p>Frankfurter pork belly pork loin pastrami.</p>
-              <img src="/images/carousel/carousel-03.jpg" />
-              <p>Frankfurter pork belly pork loin pastrami.</p>
+              This text has no wrapper
+              <div class="sfdo-kb-img">
+                <img src="/images/carousel/carousel-03.jpg" />
+              </div>
+              This text has no wrapper. Adding this <code>code</code> magically fixed it.
             </li>
           </ol>
 

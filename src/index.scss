@@ -71,6 +71,39 @@ $kb-theme-colors: (
     bottom: $spacing-xx-small;
   }
 }
+
+@mixin adjacentSpacing($spacing, $selector) {
+  $none_after:
+    'h1',
+    'h2',
+    'h3',
+    'h4',
+    'h5',
+    'h6',
+    'p',
+    '.p',
+    'figure',
+    'img',
+    'ul',
+    'ol',
+    'dl',
+    'figure',
+    'table';
+
+  #{$selector} {
+    margin: {
+      top: $spacing;
+      bottom: $spacing;
+    }
+  }
+
+  @each $el in $none_after {
+    #{$el} + #{$selector} {
+      margin-top: 0
+    }
+  }
+}
+
 .slds {
 
   .sfdo-kb {
@@ -163,14 +196,20 @@ $kb-theme-colors: (
 
         p,
         .p,
-        figure,
-        img {
+        figure {
           margin-bottom: $spacing-x-small;
         }
 
-        :last-child {
-          margin-bottom: 0;
+        @include adjacentSpacing($spacing-x-small, "#{$sfdo-css-prefix}-img");
+
+        #{$sfdo-css-prefix}-img {
+          &:first-child:last-child {
+            margin-top: 0;
+            display: inline-block;
+            vertical-align: top;
+          }
         }
+
       }
 
       dl {
@@ -200,7 +239,6 @@ $kb-theme-colors: (
       p,
       .p,
       figure,
-      img,
       ul,
       ol,
       dl,
@@ -348,6 +386,15 @@ $kb-theme-colors: (
           border-top: $border-width-thin solid $color-border;
         }
       }
+    }
+
+    &-img {
+      margin-bottom: $spacing-medium;
+    }
+
+    &-img_inline {
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 
