@@ -201,11 +201,14 @@
       .slds .sfdo-kb__body ol ol ol {
         list-style: lower-roman; }
   .slds .sfdo-kb__body li {
-    margin-bottom: 0.25rem; }
-    .slds .sfdo-kb__body li p, .slds .sfdo-kb__body li .p {
-      margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem; }
+    .slds .sfdo-kb__body li p,
+    .slds .sfdo-kb__body li .p,
+    .slds .sfdo-kb__body li figure,
     .slds .sfdo-kb__body li img {
       margin-bottom: 0.5rem; }
+    .slds .sfdo-kb__body li :last-child {
+      margin-bottom: 0; }
   .slds .sfdo-kb__body dl {
     margin-bottom: 1rem; }
   .slds .sfdo-kb__body dt {
@@ -224,10 +227,11 @@
   .slds .sfdo-kb__body h6,
   .slds .sfdo-kb__body p,
   .slds .sfdo-kb__body .p,
+  .slds .sfdo-kb__body figure,
+  .slds .sfdo-kb__body img,
   .slds .sfdo-kb__body ul,
   .slds .sfdo-kb__body ol,
   .slds .sfdo-kb__body dl,
-  .slds .sfdo-kb__body img,
   .slds .sfdo-kb__body figure,
   .slds .sfdo-kb__body table {
     margin-bottom: 1rem; }
