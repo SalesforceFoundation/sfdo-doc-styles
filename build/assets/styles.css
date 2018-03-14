@@ -204,11 +204,45 @@
     margin-bottom: 0.5rem; }
     .slds .sfdo-kb__body li p,
     .slds .sfdo-kb__body li .p,
-    .slds .sfdo-kb__body li figure,
-    .slds .sfdo-kb__body li img {
+    .slds .sfdo-kb__body li figure {
       margin-bottom: 0.5rem; }
-    .slds .sfdo-kb__body li :last-child {
-      margin-bottom: 0; }
+    .slds .sfdo-kb__body li .sfdo-kb-img {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem; }
+    .slds .sfdo-kb__body li h1 + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li h2 + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li h3 + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li h4 + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li h5 + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li h6 + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li p + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li .p + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li figure + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li img + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li ul + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li ol + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li dl + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li figure + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li table + .sfdo-kb-img {
+      margin-top: 0; }
+    .slds .sfdo-kb__body li .sfdo-kb-img:first-child:last-child {
+      margin-top: 0;
+      display: inline-block;
+      vertical-align: top; }
   .slds .sfdo-kb__body dl {
     margin-bottom: 1rem; }
   .slds .sfdo-kb__body dt {
@@ -228,7 +262,6 @@
   .slds .sfdo-kb__body p,
   .slds .sfdo-kb__body .p,
   .slds .sfdo-kb__body figure,
-  .slds .sfdo-kb__body img,
   .slds .sfdo-kb__body ul,
   .slds .sfdo-kb__body ol,
   .slds .sfdo-kb__body dl,
@@ -321,3 +354,10 @@
     .slds .sfdo-kb__body table tbody td,
     .slds .sfdo-kb__body table tbody th {
       border-top: 1px solid #dddbda; }
+
+.slds .sfdo-kb-img {
+  margin-bottom: 1rem; }
+
+.slds .sfdo-kb-img_inline {
+  display: inline-block;
+  vertical-align: middle; }
