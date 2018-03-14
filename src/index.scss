@@ -159,14 +159,17 @@ $kb-theme-colors: (
       }
 
       li {
-        margin-bottom: $spacing-xx-small;
+        margin-bottom: $spacing-x-small;
 
-        p, .p {
+        p,
+        .p,
+        figure,
+        img {
           margin-bottom: $spacing-x-small;
         }
 
-        img {
-          margin-bottom: $spacing-x-small;
+        :last-child {
+          margin-bottom: 0;
         }
       }
 
@@ -196,10 +199,11 @@ $kb-theme-colors: (
       h6,
       p,
       .p,
+      figure,
+      img,
       ul,
       ol,
       dl,
-      img,
       figure,
       table {
         margin-bottom: $spacing-medium;
