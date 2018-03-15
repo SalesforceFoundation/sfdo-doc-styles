@@ -210,6 +210,17 @@ $kb-theme-colors: (
           }
         }
 
+        @include adjacentSpacing($spacing-x-small, "#{$sfdo-css-prefix}-note");
+
+        #{$sfdo-css-prefix}-note {
+          &:first-child:last-child {
+            margin-top: 0;
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+
       }
 
       dl {
