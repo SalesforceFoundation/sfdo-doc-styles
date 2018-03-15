@@ -121,7 +121,7 @@ $kb-theme-colors: (
     &__header {
       font-family: $font-family;
       margin-bottom: $spacing-large;
-      padding-bottom: $spacing-large;
+      padding-bottom: $spacing-medium;
       border-bottom: 1px solid $color-border;
     }
 
@@ -138,12 +138,12 @@ $kb-theme-colors: (
     &__title {
       font-size: 2rem;
       line-height: 2.2rem;
-      margin-bottom: $spacing-medium;
+      margin-bottom: $spacing-small;
     }
 
     &__summary {
       color: $color-text-weak;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 300;
 
       &:last-child {
