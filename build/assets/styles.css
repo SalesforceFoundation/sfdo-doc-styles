@@ -148,7 +148,7 @@
 .slds .sfdo-kb__header {
   font-family: "Salesforce Sans", Arial, sans-serif;
   margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #dddbda; }
 
 .slds .sfdo-kb__footer {
@@ -162,11 +162,11 @@
 .slds .sfdo-kb__title {
   font-size: 2rem;
   line-height: 2.2rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 0.75rem; }
 
 .slds .sfdo-kb__summary {
   color: #706e6b;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 300; }
   .slds .sfdo-kb__summary:last-child {
     margin-bottom: 0; }
