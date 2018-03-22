@@ -156,6 +156,9 @@
   padding-top: 1.5rem;
   border-top: 1px solid #dddbda; }
 
+.slds .sfdo-kb_public .sfdo-kb-meta__author-avatar {
+  display: none; }
+
 .slds .sfdo-kb__type {
   margin-bottom: 0.25rem; }
 
