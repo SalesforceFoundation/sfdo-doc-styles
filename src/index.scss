@@ -144,7 +144,8 @@ $kb-theme-colors: (
     &__title {
       font-size: 2rem;
       line-height: 2.2rem;
-      margin-bottom: $spacing-small;
+      margin-bottom: $spacing-x-small;
+      margin-top: 0.4rem;
     }
 
     &__summary {

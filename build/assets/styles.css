@@ -165,7 +165,8 @@
 .slds .sfdo-kb__title {
   font-size: 2rem;
   line-height: 2.2rem;
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.5rem;
+  margin-top: 0.4rem; }
 
 .slds .sfdo-kb__summary {
   color: #706e6b;
