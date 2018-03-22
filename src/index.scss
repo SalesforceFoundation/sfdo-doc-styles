@@ -207,6 +207,16 @@ $kb-theme-colors: (
           margin-bottom: $spacing-x-small;
         }
 
+        @include adjacentSpacing($spacing-x-small, ".p");
+
+        .p {
+          &:first-child:last-child {
+            margin-top: 0;
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+
         @include adjacentSpacing($spacing-x-small, "#{$sfdo-css-prefix}-img");
 
         #{$sfdo-css-prefix}-img {
