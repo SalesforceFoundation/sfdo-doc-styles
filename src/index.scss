@@ -131,6 +131,12 @@ $kb-theme-colors: (
       border-top: 1px solid $color-border;
     }
 
+    &_public {
+      .sfdo-kb-meta__author-avatar {
+        display: none;
+      }
+    }
+
     &__type {
       margin-bottom: $spacing-xx-small;
     }
