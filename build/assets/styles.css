@@ -172,6 +172,54 @@
   .hub-primary-theme .sfdo-kb-inline-toc__list {
     margin-bottom: 0; }
 
+.slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__type,
+.hub-primary-theme .sfdo-kb-theme_product-documentation .sfdo-kb__type {
+  color: #62B7ED; }
+
+.slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__title,
+.hub-primary-theme .sfdo-kb-theme_product-documentation .sfdo-kb__title {
+  color: #62B7ED; }
+
+.slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__product-icon,
+.hub-primary-theme .sfdo-kb-theme_product-documentation .sfdo-kb__product-icon {
+  background-color: #62B7ED; }
+
+.slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__article-icon .slds-icon_container,
+.hub-primary-theme .sfdo-kb-theme_product-documentation .sfdo-kb__article-icon .slds-icon_container {
+  background-color: #62B7ED; }
+
+.slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__type,
+.hub-primary-theme .sfdo-kb-theme_best-practice .sfdo-kb__type {
+  color: #6cb875; }
+
+.slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__title,
+.hub-primary-theme .sfdo-kb-theme_best-practice .sfdo-kb__title {
+  color: #6cb875; }
+
+.slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__product-icon,
+.hub-primary-theme .sfdo-kb-theme_best-practice .sfdo-kb__product-icon {
+  background-color: #6cb875; }
+
+.slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__article-icon .slds-icon_container,
+.hub-primary-theme .sfdo-kb-theme_best-practice .sfdo-kb__article-icon .slds-icon_container {
+  background-color: #6cb875; }
+
+.slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__type,
+.hub-primary-theme .sfdo-kb-theme_customer-service .sfdo-kb__type {
+  color: #f88962; }
+
+.slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__title,
+.hub-primary-theme .sfdo-kb-theme_customer-service .sfdo-kb__title {
+  color: #f88962; }
+
+.slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__product-icon,
+.hub-primary-theme .sfdo-kb-theme_customer-service .sfdo-kb__product-icon {
+  background-color: #f88962; }
+
+.slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__article-icon .slds-icon_container,
+.hub-primary-theme .sfdo-kb-theme_customer-service .sfdo-kb__article-icon .slds-icon_container {
+  background-color: #f88962; }
+
 .slds .sfdo-kb .sfdo-kb__header,
 .hub-primary-theme .sfdo-kb__header {
   font-family: "Salesforce Sans", Arial, sans-serif;
@@ -208,54 +256,6 @@
   .slds .sfdo-kb .sfdo-kb__summary:last-child,
   .hub-primary-theme .sfdo-kb__summary:last-child {
     margin-bottom: 0; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__type,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__type {
-  color: #62B7ED; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__title,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__title {
-  color: #62B7ED; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__product-icon,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__product-icon {
-  background-color: #62B7ED; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__article-icon .slds-icon_container,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__article-icon .slds-icon_container {
-  background-color: #62B7ED; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__type,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__type {
-  color: #6cb875; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__title,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__title {
-  color: #6cb875; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__product-icon,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__product-icon {
-  background-color: #6cb875; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__article-icon .slds-icon_container,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__article-icon .slds-icon_container {
-  background-color: #6cb875; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__type,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__type {
-  color: #f88962; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__title,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__title {
-  color: #f88962; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__product-icon,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__product-icon {
-  background-color: #f88962; }
-
-.slds .sfdo-kb .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__article-icon .slds-icon_container,
-.hub-primary-theme .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__article-icon .slds-icon_container {
-  background-color: #f88962; }
 
 .slds .sfdo-kb .sfdo-kb__body,
 .hub-primary-theme .sfdo-kb__body {

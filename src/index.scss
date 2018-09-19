@@ -21,6 +21,8 @@
     './notes',
     './toc';
 
+  @include themes();
+
   #{$sfdo-css-prefix} {
     @import './main';
   }
