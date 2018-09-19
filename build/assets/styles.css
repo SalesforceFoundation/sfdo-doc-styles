@@ -181,12 +181,11 @@
 .slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__title {
   color: #62B7ED; }
 
-.slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__product-icon,
-.slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__article-icon {
+.slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__product-icon {
   background-color: #62B7ED; }
-  .slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__product-icon .slds-icon_container,
-  .slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__article-icon .slds-icon_container {
-    background-color: #62B7ED; }
+
+.slds .sfdo-kb .sfdo-kb-theme_product-documentation .sfdo-kb__article-icon .slds-icon_container {
+  background-color: #62B7ED; }
 
 .slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__type {
   color: #6cb875; }
@@ -194,12 +193,11 @@
 .slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__title {
   color: #6cb875; }
 
-.slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__product-icon,
-.slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__article-icon {
+.slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__product-icon {
   background-color: #6cb875; }
-  .slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__product-icon .slds-icon_container,
-  .slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__article-icon .slds-icon_container {
-    background-color: #6cb875; }
+
+.slds .sfdo-kb .sfdo-kb-theme_best-practice .sfdo-kb__article-icon .slds-icon_container {
+  background-color: #6cb875; }
 
 .slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__type {
   color: #f88962; }
@@ -207,12 +205,11 @@
 .slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__title {
   color: #f88962; }
 
-.slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__product-icon,
-.slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__article-icon {
+.slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__product-icon {
   background-color: #f88962; }
-  .slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__product-icon .slds-icon_container,
-  .slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__article-icon .slds-icon_container {
-    background-color: #f88962; }
+
+.slds .sfdo-kb .sfdo-kb-theme_customer-service .sfdo-kb__article-icon .slds-icon_container {
+  background-color: #f88962; }
 
 .slds .sfdo-kb__body {
   font-family: "Salesforce Sans", Arial, sans-serif;

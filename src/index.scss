@@ -51,10 +51,10 @@ $kb-theme-colors: (
       color: $color;
     }
 
-    #{$sfdo-css-prefix}__product-icon,
-    #{$sfdo-css-prefix}__article-icon {
+    #{$sfdo-css-prefix}__product-icon {
       background-color: $color;
-
+    }
+    #{$sfdo-css-prefix}__article-icon {
       .slds-icon_container {
         background-color: $color;
       }
