@@ -32,8 +32,11 @@ $text-size-bump-heading: .4rem;
 $text-size-bump-body: .1rem;
 
 $kb-theme-colors: (
-  product-documentation: #62B7ED
+  product-documentation: #62B7ED,
+  best-practice: #6cb875,
+  customer-service: #f88962
 );
+
 
 @mixin theme-header($theme) {
   $color: map-get($kb-theme-colors, $theme);
@@ -48,8 +51,13 @@ $kb-theme-colors: (
       color: $color;
     }
 
-    #{$sfdo-css-prefix}__product-icon {
+    #{$sfdo-css-prefix}__product-icon,
+    #{$sfdo-css-prefix}__article-icon {
       background-color: $color;
+
+      .slds-icon_container {
+        background-color: $color;
+      }
     }
 
   }
