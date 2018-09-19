@@ -1,0 +1,105 @@
+@import
+  // SLDS Dependencies
+  '~@salesforce-ux/design-system/scss/design-tokens',
+  '~@salesforce-ux/design-system/scss/config',
+  '~@salesforce-ux/design-system/scss/vendor/deprecate',
+  '~@salesforce-ux/design-system/scss/dependencies/index';
+
+$kb-font-path: './fonts/sfdo-kb-docs-icons';
+
+@font-face {
+  font-family: 'sfdo-kb-docs-icons';
+  src:  url('#{$kb-font-path}.eot?wfdc51');
+  src:  url('#{$kb-font-path}.eot?wfdc51#iefix') format('embedded-opentype'),
+    url('#{$kb-font-path}.ttf?wfdc51') format('truetype'),
+    url('#{$kb-font-path}.woff?wfdc51') format('woff'),
+    url('#{$kb-font-path}.svg?wfdc51#sfdo-kb-docs-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$sfdo-css-prefix: '.sfdo-kb';
+
+$text-size-bump-heading: .4rem;
+$text-size-bump-body: .1rem;
+
+$kb-theme-colors: (
+  product-documentation: #62B7ED,
+  best-practice: #6cb875,
+  customer-service: #f88962
+);
+
+
+@mixin theme-header($theme) {
+  $color: map-get($kb-theme-colors, $theme);
+
+  #{$sfdo-css-prefix}-theme_#{$theme} {
+
+    #{$sfdo-css-prefix}__type {
+      color: $color;
+    }
+
+    #{$sfdo-css-prefix}__title {
+      color: $color;
+    }
+
+    #{$sfdo-css-prefix}__product-icon {
+      background-color: $color;
+    }
+    #{$sfdo-css-prefix}__article-icon {
+      .slds-icon_container {
+        background-color: $color;
+      }
+    }
+
+  }
+}
+
+@mixin themes() {
+  @each $name, $color in $kb-theme-colors {
+    @include theme-header($name);
+  }
+}
+
+@mixin caption() {
+  font-size: $font-size-medium;
+  color: $color-text-weak;
+  font-style: italic;
+
+  margin: {
+    top: $spacing-xx-small;
+    bottom: $spacing-xx-small;
+  }
+}
+
+@mixin adjacentSpacing($spacing, $selector) {
+  $none_after:
+    'h1',
+    'h2',
+    'h3',
+    'h4',
+    'h5',
+    'h6',
+    'p',
+    '.p',
+    'figure',
+    'img',
+    'ul',
+    'ol',
+    'dl',
+    'figure',
+    'table';
+
+  #{$selector} {
+    margin: {
+      top: $spacing;
+      bottom: $spacing;
+    }
+  }
+
+  @each $el in $none_after {
+    #{$el} + #{$selector} {
+      margin-top: 0
+    }
+  }
+}
