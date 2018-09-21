@@ -48,6 +48,14 @@ $kb-theme-colors: (
 @mixin theme-header($theme) {
   $color: map-get($kb-theme-colors, $theme);
 
+  #{$sfdo-css-prefix}-text-color-theme_#{$theme} {
+    color: $color;
+  }
+
+  #{$sfdo-css-prefix}-bg-color-theme_#{$theme} {
+    background-color: $color;
+  }
+
   #{$sfdo-css-prefix}-theme_#{$theme} {
 
     #{$sfdo-css-prefix}__type {
@@ -56,6 +64,14 @@ $kb-theme-colors: (
 
     #{$sfdo-css-prefix}__title {
       color: $color;
+    }
+
+    #{$sfdo-css-prefix}-text-color_theme {
+      color: $color;
+    }
+
+    #{$sfdo-css-prefix}-bg-color_theme {
+      background-color: $color;
     }
 
     #{$sfdo-css-prefix}__product-icon {
