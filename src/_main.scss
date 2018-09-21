@@ -1,0 +1,304 @@
+&__header {
+  font-family: $font-family;
+  margin-bottom: $spacing-large;
+  padding-bottom: $spacing-medium;
+  border-bottom: 1px solid $color-border;
+}
+
+&__footer {
+  margin-top: $spacing-large;
+  padding-top: $spacing-large;
+  border-top: 1px solid $color-border;
+}
+
+&_public {
+  .sfdo-kb-meta__author-avatar {
+    display: none;
+  }
+}
+
+&__type {
+  margin-bottom: $spacing-xx-small;
+}
+
+&__title {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  margin-bottom: $spacing-x-small;
+  margin-top: 0.4rem;
+}
+
+&__summary {
+  color: $color-text-weak;
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+&__footer {
+
+}
+
+&__body {
+  font-family: $font-family;
+  font-size: $font-size-medium + $text-size-bump-body;
+  padding-left: $square-icon-large-boundary + $spacing-small;
+
+
+  ul {
+    @include list-has-bullets;
+
+    margin-left: 1.5rem;
+
+    ul {
+      list-style: circle;
+
+      ul {
+        list-style: square;
+      }
+    }
+  }
+
+  ol {
+    @include list-has-numbers;
+
+    margin-left: 1.5rem;
+
+    ol {
+      list-style: lower-alpha;
+
+      ol {
+        list-style: lower-roman;
+      }
+    }
+  }
+
+  li {
+    margin-bottom: $spacing-x-small;
+
+    p,
+    .p,
+    figure {
+      margin-bottom: $spacing-x-small;
+    }
+
+    @include adjacentSpacing($spacing-x-small, ".p");
+
+    .p {
+      &:first-child:last-child {
+        margin-top: 0;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    @include adjacentSpacing($spacing-x-small, "#{$sfdo-css-prefix}-img");
+
+    #{$sfdo-css-prefix}-img {
+      &:first-child:last-child {
+        margin-top: 0;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    @include adjacentSpacing($spacing-x-small, "#{$sfdo-css-prefix}-note");
+
+    #{$sfdo-css-prefix}-note {
+      &:first-child:last-child {
+        margin-top: 0;
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+  }
+
+  dl {
+    margin-bottom: $spacing-medium;
+  }
+
+  dt {
+    font-weight: $font-weight-bold;
+    margin-bottom: $spacing-xx-small;
+  }
+
+  dd {
+    margin-left: $spacing-medium;
+    margin-bottom: $spacing-medium;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  .p,
+  figure,
+  ul,
+  ol,
+  dl,
+  figure,
+  table {
+    margin-bottom: $spacing-medium;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family;
+    line-height: 1.25;
+    padding-top: $spacing-small;
+  }
+
+  h2 + h3 {
+    padding-top: 0;
+  }
+
+  h3 + h4 {
+    padding-top: 0;
+  }
+
+  h1 {
+    font-size: $font-size-xx-large + $text-size-bump-heading;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: $font-size-x-large + $text-size-bump-heading;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: $font-size-x-large;
+  }
+
+  h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: $font-size-large;
+  }
+
+  h5 {
+    font-weight: 500;
+    font-size: $font-size-medium;
+  }
+
+  h6 {
+    font-weight: 500;
+    font-size: $font-size-small;
+  }
+
+  var,
+  em {
+    font-style: italic;
+  }
+
+  code {
+    background: $color-background;
+    font-size: $font-size-medium;
+    padding: {
+      right: 2px;
+      left: 2px;
+    }
+  }
+
+  figure {
+    display: block;
+
+    img {
+      margin-bottom: 0;
+    }
+    figcaption {
+      @include caption();
+
+      > p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  table {
+
+    caption {
+      @include caption();
+    }
+
+    thead,
+    tbody {
+      font-size: $font-size-medium;
+    }
+
+    background-color: $color-background-alt;
+    font-size: inherit; // forces table to respect body font
+
+    // Cells
+    th,
+    td {
+      padding: $table-cell-spacing;
+      position: relative;
+    }
+
+    td {
+      vertical-align: top;
+    }
+
+    // Table Heading Cells
+    th {
+      font-weight: $font-weight-regular;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    thead th {
+      background-color: $table-color-background-header;
+      color: $table-color-text-header;
+      padding: $table-cell-spacing;
+    }
+
+    // First cells in a row
+    tr > th:first-child,
+    tr > td:first-child {
+      padding-left: $spacing-large;
+    }
+
+    // Last cells in a row
+    tr > th:last-child,
+    tr > td:last-child {
+      padding-right: $spacing-large;
+    }
+
+    border-collapse: separate;
+    border: $border-width-thin solid $color-border;
+
+    thead > tr + tr > th {
+      border-top: $border-width-thin solid $color-border;
+    }
+
+    // Cells
+    tbody td,
+    tbody th {
+      border-top: $border-width-thin solid $color-border;
+    }
+  }
+}
+
+&-img {
+  margin-bottom: $spacing-medium;
+}
+
+&-img_inline {
+  display: inline-block;
+  vertical-align: middle;
+}
