@@ -31,9 +31,30 @@ $kb-theme-colors: (
   customer-service: #f88962
 );
 
+@mixin best-practice-padding-fix() {
+  .slds-icon {
+    padding: 4px;
+  }
+
+  .slds-icon_large {
+    padding: 6px;
+  }
+
+  .slds-icon_small {
+    padding: 4px;
+  }
+}
 
 @mixin theme-header($theme) {
   $color: map-get($kb-theme-colors, $theme);
+
+  #{$sfdo-css-prefix}-text-color-theme_#{$theme} {
+    color: $color;
+  }
+
+  #{$sfdo-css-prefix}-bg-color-theme_#{$theme} {
+    background-color: $color;
+  }
 
   #{$sfdo-css-prefix}-theme_#{$theme} {
 
@@ -45,10 +66,24 @@ $kb-theme-colors: (
       color: $color;
     }
 
+    #{$sfdo-css-prefix}-text-color_theme {
+      color: $color;
+    }
+
+    #{$sfdo-css-prefix}-bg-color_theme {
+      background-color: $color;
+    }
+
     #{$sfdo-css-prefix}__product-icon {
+      @if $theme == 'best-practice' {
+        @include best-practice-padding-fix();
+      }
       background-color: $color;
     }
     #{$sfdo-css-prefix}__article-icon {
+      @if $theme == 'best-practice' {
+        @include best-practice-padding-fix();
+      }
       .slds-icon_container {
         background-color: $color;
       }
