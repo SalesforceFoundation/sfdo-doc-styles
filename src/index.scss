@@ -24,8 +24,7 @@
       './notes',
       './toc',
       './main';
-
-    @include themes();
-
   }
+
+  @include themes();
 }
