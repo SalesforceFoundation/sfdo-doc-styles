@@ -610,6 +610,18 @@
 .hub-primary-theme .sfdo-kb-theme_best-practice .sfdo-kb__title {
   color: #6cb875; }
 
+.slds .sfdo-kb-theme_best-practice .slds-icon,
+.hub-primary-theme .sfdo-kb-theme_best-practice .slds-icon {
+  padding: 4px; }
+
+.slds .sfdo-kb-theme_best-practice .slds-icon_large,
+.hub-primary-theme .sfdo-kb-theme_best-practice .slds-icon_large {
+  padding: 6px; }
+
+.slds .sfdo-kb-theme_best-practice .slds-icon_small,
+.hub-primary-theme .sfdo-kb-theme_best-practice .slds-icon_small {
+  padding: 4px; }
+
 .slds .sfdo-kb-theme_best-practice .sfdo-kb__product-icon,
 .hub-primary-theme .sfdo-kb-theme_best-practice .sfdo-kb__product-icon {
   background-color: #6cb875; }
