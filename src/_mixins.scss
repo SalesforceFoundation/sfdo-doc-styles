@@ -18,7 +18,9 @@ $kb-font-path: './fonts/sfdo-kb-docs-icons';
   font-style: normal;
 }
 
+$sfdo-lc-prefix: '.hub-primary-theme';
 $sfdo-css-prefix: '.sfdo-kb';
+$sfdo-lc-container: $sfdo-lc-prefix + '__body';
 
 $text-size-bump-heading: .4rem;
 $text-size-bump-body: .1rem;

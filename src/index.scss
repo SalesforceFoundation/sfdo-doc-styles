@@ -1,4 +1,5 @@
-@import './mixins';
+@import
+  './mixins';
 
 .example {
   background: #fff;
@@ -8,8 +9,8 @@
   }
 }
 
-.slds .sfdo-kb,
-.hub-primary-theme {
+.slds,
+#{$sfdo-lc-prefix} {
 
   .sfdo-kb {
     dt {
@@ -17,13 +18,14 @@
     }
   }
 
-  @import
-    './notes',
-    './toc';
-
-  @include themes();
-
   #{$sfdo-css-prefix} {
-    @import './main';
+
+    @import
+      './notes',
+      './toc',
+      './main';
+
+    @include themes();
+
   }
 }
