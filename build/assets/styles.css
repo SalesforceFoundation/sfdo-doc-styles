@@ -62,6 +62,11 @@
     content: "\E900";
     color: #706e6b;
     font-size: 1.5rem; }
+  .slds .sfdo-kb .sfdo-kb-note_developer:before,
+  .hub-primary-theme .sfdo-kb .sfdo-kb-note_developer:before {
+    content: "\E900";
+    color: #706e6b;
+    font-size: 1.5rem; }
   .slds .sfdo-kb .sfdo-kb-note_tip:before,
   .hub-primary-theme .sfdo-kb .sfdo-kb-note_tip:before {
     content: "\E901";
@@ -115,6 +120,12 @@
 
 .slds .sfdo-kb .sfdo-kb-icon-link__icon_attention:before,
 .hub-primary-theme .sfdo-kb .sfdo-kb-icon-link__icon_attention:before {
+  content: "\E900";
+  color: #706e6b;
+  font-size: 1.5rem; }
+
+.slds .sfdo-kb .sfdo-kb-icon-link__icon_developer:before,
+.hub-primary-theme .sfdo-kb .sfdo-kb-icon-link__icon_developer:before {
   content: "\E900";
   color: #706e6b;
   font-size: 1.5rem; }
