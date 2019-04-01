@@ -45,8 +45,11 @@
 &__body {
   font-family: $font-family;
   font-size: $font-size-medium + $text-size-bump-body;
-  padding-left: $square-icon-large-boundary + $spacing-small;
+  padding-left: 0;
 
+  @include mq-medium-min {
+    padding-left: $square-icon-large-boundary + $spacing-small;
+  }
 
   ul {
     @include list-has-bullets;
