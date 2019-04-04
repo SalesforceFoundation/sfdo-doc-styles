@@ -224,7 +224,10 @@
 .hub-primary-theme .sfdo-kb__body {
   font-family: "Salesforce Sans", Arial, sans-serif;
   font-size: 0.9125rem;
-  padding-left: 0; }
+  padding-left: 0;
+  /**
+   * Scrollable
+   */ }
   @media (min-width: 48em) {
     .slds .sfdo-kb__body,
     .hub-primary-theme .sfdo-kb__body {
@@ -540,7 +543,11 @@
     background-color: white;
     font-size: inherit;
     border-collapse: separate;
-    border: 1px solid #dddbda; }
+    border: 1px solid #dddbda;
+    /* Fix for use of invalid border attributes causing double borders */ }
+    .slds .sfdo-kb__body table[border="1"],
+    .hub-primary-theme .sfdo-kb__body table[border="1"] {
+      border-collapse: collapse; }
     .slds .sfdo-kb__body table caption,
     .hub-primary-theme .sfdo-kb__body table caption {
       font-size: 0.8125rem;
@@ -591,6 +598,14 @@
     .hub-primary-theme .sfdo-kb__body table tbody td,
     .hub-primary-theme .sfdo-kb__body table tbody th {
       border-top: 1px solid #dddbda; }
+  .slds .sfdo-kb__body .sfdo-kb-scrollable_table,
+  .hub-primary-theme .sfdo-kb__body .sfdo-kb-scrollable_table {
+    border: 1px solid rgba(221, 219, 218, 0.5);
+    padding: 0.1875rem;
+    margin-bottom: 1rem; }
+    .slds .sfdo-kb__body .sfdo-kb-scrollable_table > table,
+    .hub-primary-theme .sfdo-kb__body .sfdo-kb-scrollable_table > table {
+      margin-bottom: 0; }
 
 .slds .sfdo-kb-img,
 .hub-primary-theme .sfdo-kb-img {
