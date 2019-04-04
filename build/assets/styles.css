@@ -224,7 +224,11 @@
 .hub-primary-theme .sfdo-kb__body {
   font-family: "Salesforce Sans", Arial, sans-serif;
   font-size: 0.9125rem;
-  padding-left: 3.75rem; }
+  padding-left: 0; }
+  @media (min-width: 48em) {
+    .slds .sfdo-kb__body,
+    .hub-primary-theme .sfdo-kb__body {
+      padding-left: 3.75rem; } }
   .slds .sfdo-kb__body ul,
   .hub-primary-theme .sfdo-kb__body ul {
     margin-left: 1.5rem;
