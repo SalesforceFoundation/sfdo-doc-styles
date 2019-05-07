@@ -226,6 +226,9 @@
   font-size: 0.9125rem;
   padding-left: 0;
   /**
+   * Bootstrap coexistance
+   */
+  /**
    * Scrollable
    */ }
   @media (min-width: 48em) {
@@ -598,6 +601,14 @@
     .hub-primary-theme .sfdo-kb__body table tbody td,
     .hub-primary-theme .sfdo-kb__body table tbody th {
       border-top: 1px solid #dddbda; }
+  .slds .sfdo-kb__body_bootstrap h1, .slds .sfdo-kb__body_bootstrap h2, .slds .sfdo-kb__body_bootstrap h3, .slds .sfdo-kb__body_bootstrap h4, .slds .sfdo-kb__body_bootstrap h5, .slds .sfdo-kb__body_bootstrap h6,
+  .hub-primary-theme .sfdo-kb__body_bootstrap h1,
+  .hub-primary-theme .sfdo-kb__body_bootstrap h2,
+  .hub-primary-theme .sfdo-kb__body_bootstrap h3,
+  .hub-primary-theme .sfdo-kb__body_bootstrap h4,
+  .hub-primary-theme .sfdo-kb__body_bootstrap h5,
+  .hub-primary-theme .sfdo-kb__body_bootstrap h6 {
+    margin-top: 0; }
   .slds .sfdo-kb__body .sfdo-kb-scrollable_table,
   .hub-primary-theme .sfdo-kb__body .sfdo-kb-scrollable_table {
     border: 1px solid rgba(221, 219, 218, 0.5);
