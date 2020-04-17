@@ -516,6 +516,9 @@
   .hub-primary-theme .sfdo-kb__body var,
   .hub-primary-theme .sfdo-kb__body em {
     font-style: italic; }
+  .slds .sfdo-kb__body .sfdo-kb-block-code,
+  .hub-primary-theme .sfdo-kb__body .sfdo-kb-block-code {
+    background: #f3f2f2; }
   .slds .sfdo-kb__body code,
   .hub-primary-theme .sfdo-kb__body code {
     background: #f3f2f2;
@@ -571,7 +574,7 @@
       vertical-align: top; }
     .slds .sfdo-kb__body table th,
     .hub-primary-theme .sfdo-kb__body table th {
-      font-weight: 400; }
+      font-weight: 700; }
       .slds .sfdo-kb__body table th:focus,
       .hub-primary-theme .sfdo-kb__body table th:focus {
         outline: 0; }

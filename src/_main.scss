@@ -206,6 +206,10 @@
     font-style: italic;
   }
 
+  .sfdo-kb-block-code {
+    background: $color-background;
+  }
+
   code {
     background: $color-background;
     font-size: $font-size-medium;
@@ -263,7 +267,7 @@
 
     // Table Heading Cells
     th {
-      font-weight: $font-weight-regular;
+      font-weight: $font-weight-bold;
 
       &:focus {
         outline: 0;
