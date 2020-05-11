@@ -367,11 +367,6 @@
     .slds .sfdo-kb__body li table + .sfdo-kb-img,
     .hub-primary-theme .sfdo-kb__body li table + .sfdo-kb-img {
       margin-top: 0; }
-    .slds .sfdo-kb__body li .sfdo-kb-img:first-child:last-child,
-    .hub-primary-theme .sfdo-kb__body li .sfdo-kb-img:first-child:last-child {
-      margin-top: 0;
-      display: inline-block;
-      vertical-align: top; }
     .slds .sfdo-kb__body li .sfdo-kb-note,
     .hub-primary-theme .sfdo-kb__body li .sfdo-kb-note {
       margin-top: 0.5rem;

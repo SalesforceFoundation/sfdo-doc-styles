@@ -100,14 +100,6 @@
 
     @include adjacentSpacing($spacing-x-small, "#{$sfdo-css-prefix}-img");
 
-    #{$sfdo-css-prefix}-img {
-      &:first-child:last-child {
-        margin-top: 0;
-        display: inline-block;
-        vertical-align: top;
-      }
-    }
-
     @include adjacentSpacing($spacing-x-small, "#{$sfdo-css-prefix}-note");
 
     #{$sfdo-css-prefix}-note {
