@@ -596,6 +596,10 @@
     .hub-primary-theme .sfdo-kb__body table tbody td,
     .hub-primary-theme .sfdo-kb__body table tbody th {
       border-top: 1px solid #dddbda; }
+  .slds .sfdo-kb__body .sfdo-kb__pricing-table table,
+  .hub-primary-theme .sfdo-kb__body .sfdo-kb__pricing-table table {
+    border-left-style: none;
+    border-right-style: none; }
   .slds .sfdo-kb__body .sfdo-kb-scrollable_table,
   .hub-primary-theme .sfdo-kb__body .sfdo-kb-scrollable_table {
     border: 1px solid rgba(221, 219, 218, 0.5);
