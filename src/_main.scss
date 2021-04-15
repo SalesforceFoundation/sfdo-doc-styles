@@ -295,6 +295,13 @@
     }
   }
 
+  #{$sfdo-css-prefix}__pricing-table {
+    table {
+      border-left-style: none;
+      border-right-style: none;
+    }    
+  }
+
   /**
    * Scrollable
    */
